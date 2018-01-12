@@ -1,0 +1,15 @@
+Intro plug-in:
+
+1. On page load, intro plug-in will run. To close that completely, click close icon instead of "Next" / "Previous" button.
+
+
+
+Slider plug-in:
+
+1. Slide bar working process - Click anywhere on the slider line to move the slider, instead of holding & moving the slider.
+
+Plug-in:
+1. Except date picker (jquery UI plug-in), rest of the plug-ins used in this application are created by self.
+
+Data:
+1. Flight objects json added in data.js file.

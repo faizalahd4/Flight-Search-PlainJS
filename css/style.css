@@ -1,0 +1,170 @@
+/*!
+ *  Style.css
+ *  @date - 19/04/2017
+ *  @author - Faizal
+ */
+html , body {width:100%;background:#F5F5F5;color:#6f6f6f;margin:0;padding:0;font-family: 'Roboto', sans-serif;font-size:13px;}
+p {line-height:1.6em;margin:0;padding:5px 10px 5px 0;white-space:normal}
+a,a:visited,a:active{color: #1e52a4;font-size:12px;text-decoration: none; transition: all 0.5s ease;}
+a:hover{color:#396db3;text-decoration: none;}
+
+/* PAGE LAYOUT - STARTS */
+header{padding:10px 10px 10px 10px;text-align:left;border-bottom: 5px solid #1d9d74;background: #1d9d74 url('../img/texture-bg.png') repeat;box-shadow: 2px 2px 2px #505050;width:100%;position: fixed;top:0;text-align: center;height: 30px;z-index:1;}
+.container{max-width: 1100px;margin: 110px auto 20px auto;}
+#search-filter-inputs{padding-bottom: 20px}
+/* PAGE LAYOUT - ENDS */
+
+/* BOX TYPE - STARTS */
+.box-type-1{border:1px solid #EEEEEE;border-radius:3px;background:#fff;padding:0;margin:0 1% 20px 1%;box-shadow:1px 1px 3px #ccc;}
+.box-type-2{border:1px solid #1d9d74;border-radius:3px;background:#1d9d74;padding:5px;margin:0 1% 20px 1%;color:#fff;}
+.box-type-3{border:none;border-radius:3px;background:#fff;margin:0 1% 20px 1%;box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);transition: all 0.5s ease;}
+.box-type-3:hover{box-shadow:0 0 10px #ccc;}
+.box-type-3 .box-header{border-radius:3px 3px 0 0;background: #1d9d74 url('../img/texture-bg.png') repeat;color: #fff;padding: 10px 5px 10px 15px;font-size: 14px;text-transform: uppercase;text-shadow: 1px 1px #026b49;}
+.box-type-3 .box-content{padding:10px 10px 20px 10px;border:1px solid #EEEEEE;border-top: none;border-radius:0 0 3px 3px;font-size:14px;}
+.box-style-left{border: 1px solid #f3f3f3;padding: 7px;background: #f3f3f3;font-size: 13px;text-shadow: 1px 1px #fff;}
+.box-style-right{border-left: 1px solid #ffffff;border-top: 1px solid #dcdcdc;border-right: 1px solid #ccc;border-bottom: 1px solid #e8e8e8;;padding: 7px;background: #fff;font-size: 13px;text-shadow: 1px 1px #fff;}
+/* BOX TYPE - ENDS */
+
+/* GRID LAYOUT - STARTS */
+.cols{margin-left:15px;margin-right:15px;}
+.cols:after {content: '';display: block;clear: both;}
+.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{float:left;min-height:1px;}
+.col-12{width:100%}
+.col-11{width:91.66666667%}
+.col-10{width:83.33333333%}
+.col-9{width:75%}
+.col-8{width:66.66666667%}
+.col-7{width:58.33333333%}
+.col-6{width:50%}
+.col-5{width:41.66666667%}
+.col-4{width:33.33333333%}
+.col-3{width:25%}
+.col-2{width:16.66666667%}
+.col-1{width:8.33333333%}
+/* GRID LAYOUT - ENDS */
+
+/* LIST LAYOUT - STARTS */
+.list-type-1{display:inline-block;margin: 0;padding: 0;}
+.list-type-1 li {display:inline-block;padding-right: 10px;cursor:pointer;}
+.list-type-2{display:inline-block;margin: 0;padding: 0;}
+.list-type-2 li {display:inline-block;padding-right: 10px;padding-left: 10px;cursor:pointer;border-right: 1px solid #f7f7f7;border-left: 1px solid #d6d6d6;}
+.list-type-2 li:first-child{border-left:0;} 
+.list-type-2 li:last-child{border-right:0;} 
+.list-type-3{margin: 0 20px 0 20px;padding: 0;list-style: none}
+.list-type-3 li {padding: 10px 0 10px 0;cursor:pointer;font-size:14px;line-height:21px;}
+.list-type-tb{display: table;margin: 0;padding: 0;width: 100%;table-layout: fixed;}
+.list-type-cr{display:inline-block;margin: 0 auto 0 auto;padding: 0;}
+.list-type-cr li {display:inline-block;cursor:pointer;margin: 10px 50px;position:relative;}
+.list-type-cr li .li-circle{height: 100px;width: 100px;border-radius:100px;background: #fff;border:4px solid #EEEEEE; transition: all 0.5s ease;box-shadow: 0 0 3px #ccc;border-left: 4px solid #1d9d74;text-align: center;vertical-align: middle; display: table-cell;border-right: 4px solid #1d9d74;}
+.list-type-cr li:hover .li-circle{border-color: #EEEEEE;border-top-color: #1d9d74;border-bottom-color: #1d9d74;box-shadow: 0 0  5px #ccc;cursor: pointer}
+.list-type-cr li .li-circle:after{content:'';display:inline-block;width:100%;border-bottom:4px solid #1d9d74;position: absolute;left:100%;top:50%;}
+.list-type-cr li:last-child .li-circle:after{display:none;}
+.list-type-cr li .header-4{font-size: 10px;color: #6f6f6f;}
+.list-type-cr li .header-3{font-size: 14px;color: #6F6F6F;display:block;font-weight: bold;}
+/* LIST LAYOUT - ENDS */
+
+/* FORM FEILD ELEMENTS - STARTS */
+input[type="text"]{padding: 5px 8px;margin: 0;border: 1px solid #d9d9d9;border-top: 1px solid #c0c0c0;border-radius:2px;width:90%;}
+select{padding: 5px 8px;margin: 0;border: 1px solid #d9d9d9;border-top: 1px solid #c0c0c0;border-radius:2px;width:98%;background:#fff;}
+fieldset{border:none;}
+.btn-container{padding:10px 0 10px 0;}
+.btn-pr{border: 1px solid #4285f4;font-weight: bold;background: #4285f4;padding: 5px 10px;color: #fff;border-radius: 2px;}
+.btn-tr{border: 1px solid #b93404;border-bottom: 3px solid #b93404;background-color: #cb3904;padding: 8px 30px;color: #fff; transition: all 0.5s ease;border-radius: 2px;font-size:14px;}
+.btn-tr:hover{border-bottom-color:#A53006;background-color:#DE3B00;cursor: pointer}
+.btn-se{border: 1px solid #E8E8E8;border-bottom: 3px solid #E8E8E8;font-weight: bold;background: #F1F1F1;padding: 5px 10px;color: #2D2D2D;border-radius: 2px;}
+.btn-se:hover{border-bottom-color:#D4D4D4;background-color:#F3F3F3;cursor: pointer}
+.btn-sm-sz{padding:5px 10px;}
+.calendar{background: #fff url('../img/calendar.png') no-repeat 96%;}
+/* FORM FEILD ELEMENTS - ENDS */
+
+/* SEARCH FILTER RESULT- STARTS */
+.search-filter{ transition: all 0.5s ease;border:1px solid #EEEEEE;border-radius:3px;background:#fff;padding:0;margin:0 1% 20px 1%;box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);border-left: 4px solid #1d9d74;}
+.search-filter:hover{cursor:pointer;border-color:#dadada;box-shadow:0 0 10px #ccc;border-left-color:#1d9d74;}
+.search-filter .subheader{border-bottom:1px solid #EEEEEE;border-radius:0 3px 0 3px;background:#F9F9F9;padding:10px 20px;margin:0;font-size:11px;color:#6F6F6F;}
+.search-filter .subheader p {padding:0;margin:0;display:inline-block;}
+.search-filter .content{padding:15px 0 15px 5px}
+.search-filter .header-1{font-size: 16px;color: #6F6F6F;display:block;font-weight: bold;white-space: nowrap}
+.search-filter .header-3{font-size: 17px;color: #6F6F6F;display:block;font-weight: bold;}
+.search-filter .header-2{font-size: 13px;color: #6f6f6f;}
+.search-filter .header-4{font-size: 10px;color: #6f6f6f;}
+.search-filter .price{font-size: 18px;color: #b93404;font-weight:bold;padding-bottom:10px;display: inline-block;}
+/* SEARCH FILTER RESULT - ENDS */
+
+/* ALIGNMENT - STARTS */
+.text-center{text-align:center;}
+.text-left{text-align:left;}
+.text-right{text-align:right;}
+.fl{float:left;}
+.fr{float:right;}
+.bl{display:block;}
+.box-center{margin-left: auto;margin-right: auto;position: absolute;}
+/* ALIGNMENT - ENDS */
+
+/* LOADER - STARTS */
+.loader{background: #000;opacity: 0.5;filter: alpha(opacity=50);position:fixed;top:0;bottom:0;left:0;right:0;z-index:9;}
+/* LOADER - ENDS */
+
+/* ALERT POPUP - STARTS */
+.alert{padding: 15px;border-radius: 0 0 4px 4px;position: fixed;top:0; left:0; right:0; margin: 0 auto;max-width:80%;min-width:40%;display:inline-block;z-index:2;display:none;}
+.success-alert{color: #3c763d;background: #dff0d8;border: 1px solid #d6e9c6;border-top: none;font-size:13px;}
+.error-alert{color: #a94442;background: #f2dede;border: 1px solid #ebccd1;border-top: none;font-size:13px;}
+/* ALERT POPUP - ENDS */
+
+/* INTRO POPUP - STARTS */
+.intro-popup{z-index:11;margin-top: 5px;border:1px solid #EEEEEE;min-width: 150px;border-radius:3px;background:#fff;padding:10px 10px 0 10px;box-shadow:1px 1px 3px #ccc;position:absolute;font-size: 13px;}
+.intro-tag-visible{z-index:10; position: relative;box-shadow: 0 0 15px #FFF;border: 1px solid #fff;}
+.intro-popup-close{color: #5D5D5D;font-size: 15px;font-weight: bolder;float: right;margin-top: -5px;margin-left:10px;}
+.intro-popup-close:hover{cursor: pointer;color:#cb3904;}
+/* INTRO POPUP - ENDS */
+
+/* RANGE SLIDER - STARTS */
+.slider-container{padding-top:20px;padding-bottom:20px;font-size:14px;}
+.slider-liner{background: #d6d6d6;border-top: 1px solid #ababab;height: 4px;position: relative;cursor: pointer;border-radius: 5px;}
+.slider{background:#1d9d74;height:30px;width:9px;display:inline-block;position:absolute;top:-13px;cursor:pointer;left:99%;}
+.slider:hover{background:#27c794}
+/* RANGE SLIDER - ENDS */
+
+/* TEXT ALTER DESIGN - STARTS */
+.cap{text-transform: uppercase;}
+.logo{color:#fff;text-shadow:2px 2px #024E3F}
+.logo-txt-lg{font-size:30px;font-weight:bold;margin: 0 auto;background: #1d9d74 url(../img/texture-bg.png) repeat;padding: 10px 40px 20px 40px;position: absolute;
+left: 0;right: 0;width: 200px;border-radius:30px;}
+.logo-txt-xs{font-size:15px;font-weight:bold;}
+.sec-txt-cr{color:#F26722;}
+.clear{font-size: 10px;float: right;padding-right: 10px;padding-top: 2px;cursor: pointer;}
+#tooltip-popup{border:1px solid #EEEEEE;border-radius:3px;background:#fff;padding:10px 20px;position:absolute;width:200px;color:#6f6f6f;font-size:12px;text-shadow:0 0 #6f6f6f;text-transform: none;z-index:10;}
+.mh{display: block}
+.ms-b{display: none}
+.hide{display: none}
+.show{display: inline-block}
+.pt{cursor: pointer}
+/* TEXT ALTER DESIGN - ENDS */
+
+/* AUTO COMPLETE - STARTS */
+.auto-complete{position:absolute;background: #fff;display:inline-block;border-radius:0 0 3px 3px;border: 1px solid #EEEEEE;border-top: none;}
+.auto-complete input{margin: 5px;width:86%;}
+.auto-complete ul {display:block;min-height:30px;max-height:200px;overflow-x: auto;overflow-y: none;list-style:none;padding: 0;margin: 0;}
+.auto-complete ul li{padding:10px 5px 10px 5px; border-bottom:1px solid #EEEEEE;font-size:13px;background:#fff;}
+.auto-complete ul li:last-child{border:none;}
+.auto-complete ul li:hover{cursor:pointer;background:#EEEEEE;}
+/* AUTO COMPLETE - ENDS */
+
+/* AIRLINES ICON - STARTS */
+.flights-icon{background-image: url('../img/flight.png');width: 30px;height: 30px;display: inline-block;}
+.indgo{background-position: 0 0;}
+.spicejet{background-position: -60px 0;}
+.airindia{background-position: -120px 0;}
+.jetairways{background-position: -150px 0;}
+/* AIRLINES ICON - ENDS */
+
+/* MOBILE DEVICE MEDIA QUERY - STARTS */
+@media (max-width:768px) {
+.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{display:block;float: none;width: 100%;}
+select{width:93%;}
+.list-type-cr li .li-circle:before, .list-type-cr li:last-child .li-circle:after{content:'';display:inline-block;width:100%;border-bottom:4px solid #1d9d74;position: absolute;right:100%;top:50%;}
+.btn-pr, .btn-tr, .btn-se{width: 100%;}
+.mh{display: none}
+.ms-b{display: block}
+.logo-txt-lg{position: relative;padding: 0;}
+}
+/* MOBILE DEVICE MEDIA QUERY - ENDS */
